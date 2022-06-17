@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Lexend+Deca"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Big+Shoulders+Display"
+    />
+
+    <title>CSS Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(14, 12, 12);
+      }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "a a b"
+          "c d d"
+          "c e e";
+        gap: 0.5em;
+        width: 50%;
+        margin: auto;
+      }
+      .set1 {
+        background-color: hsl(2, 93%, 42%);
+        grid-area: a;
+        padding: 20px;
+      }
+      .set2 {
+        background-color: hsl(31, 77%, 52%);
+        grid-area: b;
+        padding: 20px;
+      }
+      .set3 {
+        background-color: hsl(130, 97%, 26%);
+        grid-area: c;
+        padding: 20px;
+      }
+      .set4 {
+        background-color: hsl(199, 93%, 42%);
+        grid-area: d;
+        padding: 20px;
+      }
+      .set5 {
+        background-color: hsl(199, 93%, 42%);
+        grid-area: e;
+        padding: 20px;
+      }
+      .bton {
+        margin: 5em;
+      }
+      .btn {
+        color: #fff;
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        border-radius: 3px;
+        text-decoration: none;
+        padding: 8px 6px;
+        cursor: pointer;
+        margin-left: 17em;
+      }
+
+      @media only screen and (max-width: 770px) {
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e";
+        }
+        .btn {
+          margin-left: 7em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bton">
+      <a class="btn" href="/index.html">Flex-Layout</a>
+    </div>
+    <div class="grid-container">
+      <div class="set1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corrupti,
+        ipsam ipsum nam necessitatibus ex in incidunt aut deserunt, dolorum
+        tenetur maiores adipisci modi laborum labore omnis! Voluptate,
+        necessitatibus beatae.
+      </div>
+      <div class="set2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fuga
+        ducimus facilis animi saepe neque minus asperiores, vel cupiditate ex
+        aut at, praesentium aliquam suscipit tempora reiciendis dolores
+        molestias nemo.
+      </div>
+      <div class="set3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum optio
+        voluptas iste recusandae praesentium aut odit cumque voluptatum ex,
+        pariatur sint, fugiat nisi incidunt, repudiandae culpa quidem laudantium
+        nobis. Mollitia.
+      </div>
+      <div class="set4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
+        asperiores sit ipsa totam quisquam illum error ullam, dicta rem odit
+        exercitationem soluta officia saepe ut placeat odio. At, itaque quae!
+      </div>
+      <div class="set5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        mollitia reprehenderit nemo numquam culpa recusandae eum sint assumenda
+        unde aliquid. Unde necessitatibus similique error minima. Quis assumenda
+        voluptatem praesentium minus.
+      </div>
+    </div>
+  </body>
+</html>
