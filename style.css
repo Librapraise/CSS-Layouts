@@ -42,7 +42,7 @@ h1 {
 }
 p {
   color: hsl(0, 0%, 100%, 0.75);
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
   margin: 20px;
   line-height: 32px;
   font-family: 700;
